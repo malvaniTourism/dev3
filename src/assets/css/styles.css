@@ -1,0 +1,558 @@
+.wrapper{
+  min-height: 100vh;
+}
+
+.ajCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.alignCenter {
+  display: flex;
+  align-items: center;
+}
+.cWhite {
+  color: #fff;
+}
+.bgBlue {
+  background-color: #0000ff;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: rgb(243, 241, 241);
+}
+.navbar_brand {
+  font-weight: 700;
+  font-size: 20px;
+}
+.footer {
+  margin-top: auto;
+}
+
+.text_all_bold {
+  font-weight: bold;
+}
+
+.carousel_image {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.my_card {
+  width: 270px;
+  height: 414px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border-bottom: 7px solid #ffc107; */
+  border-radius: 7px;
+  transition: all 0.7s ease-in-out;
+}
+.offer_card_img {
+  width: 270px;
+  height: 149px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.card_content {
+  padding: 0px 10px 10px 10px;
+}
+.pack_info {
+  border-color: transparent;
+  border-bottom: 1px #ffc107;
+  border-style: dashed;
+  display: flex;
+  padding-bottom: 5px;
+  justify-content: space-evenly;
+}
+.detail_sub {
+  margin: auto;
+  width: 200px;
+}
+.pack_price {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.offer_card_book {
+  transition: all 0.7s ease-in-out;
+  display: none;
+}
+.my_card:hover .offer_card_img {
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  background-size: 120%;
+}
+.my_card:hover .offer_card_book {
+  display: block;
+  transition: all 0.7s ease-in-out;
+
+}
+.my_card:before{
+  content:'';
+  width:0;
+  height:7px;
+  position:absolute;
+  left:0;
+  bottom:0;
+  transition: all 0.7s ease-out;
+  -webkit-transition: all 0.7s ease-out;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  }
+.my_card:hover:before {
+  width: 100%;
+  background:#ffc107;
+}
+
+.holiday_card {
+  margin: 5px;
+  width: 280px;
+  text-align: left;
+  border-radius: 7px;
+  transition: all 0.7s ease-in-out;
+  box-shadow:inset 0 0 0 0;
+}
+.holiday_card_img {
+  width: 280px;
+  height: 186px;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.holiday_card_content {
+  padding: 0px 10px 10px 10px;
+  line-height: 40px;
+}
+.holiday_card_title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #071C55;
+}
+.holiday_card_price {
+  color: #ffc107;
+  font-weight: 510;
+  font-size: 30px;
+}
+.holiday_card:hover .holiday_card_img {
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  background-size: 120%;
+}
+
+.explore_card {
+  margin: 5px;
+  width: 258px;
+  height: 357px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 7px;
+  transition: all 0.7s ease-in-out;
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.1);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.explore_card_img {
+  width: 94px;
+  height: 94px;
+  border-radius: 70px;
+  border: 8px solid #fff;
+  margin-top: -40px;
+  filter: none;
+  -webkit-filter: none;
+}
+.explore_card_content {
+  padding: 0px 10px 10px 10px;
+  transition: all 0.7s ease-in-out;
+}
+.explore_card_head {
+  color: #fff;
+  font-weight: 700;
+  font-size: large;
+  transition: all 0.7s ease-in-out;
+  margin-bottom: 5px;
+}
+.explore_card_data {
+  color: #fff;
+  display: none;
+  transition: all 0.7s ease-in-out;
+}
+.explore_card:hover {
+  box-shadow: 0 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  filter: none;
+  -webkit-filter: none;
+}
+.explore_card:hover .explore_card_data {
+  display: block;
+  transition: all 0.7s ease-in-out;
+}
+
+.explore_more_card {
+  margin: 5px;
+  width: 280px;
+  height: 216px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  border-radius: 7px;
+  transition: all 0.7s ease;
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 255, 0.4);
+}
+.explore_more_content {
+  color: #fff;
+  line-height: 30px;
+}
+.explore_more_head {
+  background-color: #01B9B7;
+  padding: 3px;
+}
+.explore_more_data {
+  font-size: 20px;
+  font-weight: 700;
+}
+.explore_more_btn {
+  display: none;
+}
+.explore_more_card:hover .explore_more_btn {
+  display: block;
+  transition: all 0.7s ease;
+}
+
+.explore_detail_card {
+  height: 474px;
+  width: 590px;
+  margin: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.explore_detail_img {
+  height: 395px;
+  width: 265px;
+  border-radius: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.explore_detail_data {
+  width: 264px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.discount_card {
+  width: 60vw;
+  height: 16vw;
+  border-radius: 50px;
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 255, 0.3);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.disc_card_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #fff;
+}
+.disc_card_info {
+  height: 100%;
+  margin: auto;
+}
+
+.upcoming_tours_card {
+  height: 308px;
+  width: 231px;
+  border-radius: 10px;
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 255, 0.1);
+  transition: all 0.5s ease;
+}
+.upcoming_tours_content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.upcoming_tours_price_div {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 30%;
+}
+.upcoming_tours_price {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+  width: 70px;
+  padding-right: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.price {
+  color: #ffc107;
+  font-weight: bold;
+  font-size: 16px;
+}
+.upcoming_tours_data {
+  color: #fff;
+  padding: 15px;
+  font-size: medium;
+}
+
+.upcoming_tours_card:hover {
+  margin-top: -20px;
+  margin-bottom: 50px;
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 255, 0.1), 5px 5px 4px 2px rgba(0, 0, 255, 0.1);
+}
+
+.aboutus_card {
+  margin: 5px;
+  width: 280px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.7s ease-in-out;
+  box-shadow:inset 0 0 0 0;
+  line-height: 30px;
+}
+.aboutus_card_img {
+  width: 280px;
+  height: 298px;
+  border-radius: 10px;  
+  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.aboutus_card_title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #071C55;
+}
+.about_social_icons {
+  padding: 20px 0 20px 0;
+}
+.aboutus_card:hover .aboutus_card_img {
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 255, 0.1);
+}
+
+.site-footer {
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+  background-image: url(../img/bg3.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#fff;
+}
+.site-footer hr {
+  border-top-color:#fff;
+  opacity:0.5
+}
+.site-footer hr.small {
+  margin:20px 0
+}
+.site-footer h6 {
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a {
+  color:#fff;
+}
+.site-footer a:hover {
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links {
+  padding-left:0;
+  list-style:none
+}
+.footer-links li {
+  display:block
+}
+.footer-links a {
+  color:#fff
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li {
+  display:inline-block
+}
+.site-footer .social-icons {
+  text-align:right
+}
+.site-footer .social-icons a {
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text {
+  margin:0
+}
+@media (max-width:991px) {
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px) {
+  .site-footer {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons {
+    text-align:center
+  }
+}
+.social-icons {
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li {
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title {
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a {
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover {
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a {
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover {
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover {
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover {
+  background-color:#007bb6
+}
+.social-icons a.instagram:hover {
+  background-color:#ea4c89
+}
+@media (max-width:767px) {
+  .social-icons li.title {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+    .my_main_carousel {
+      height: 70vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .explore_detail_card {
+      height: auto;
+      width: 275px;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+    .explore_detail_img {
+      width: auto;
+      margin-bottom: 20px;
+    }
+    .explore_detail_data {
+      padding: 10px;
+      font-size: 13px;
+    }
+    .discount_card {
+      width: 85vw;
+      height: 36vw;
+      border-radius: 25px;
+    }
+    .disc_card_book {
+      font-size: 10px;
+    }
+}
+
+.topScroll {
+  bottom: 10px;
+  right: 20px;
+  font-size: 25px;
+  padding: 10px;
+  background-color: #33353d;
+  color: #eceeef;
+  position:fixed;
+  border-radius: 100px;
+}
+
+.aboutus_div {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card_carousel {
+  padding: 20px;
+  margin: 20px;
+}
