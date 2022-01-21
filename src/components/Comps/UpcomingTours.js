@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import OffersCard from "../Cards/OffersCard";
+import UpcomingToursCard from "../Cards/UpcomingToursCard";
 
 const OffersDiscounts = () => {
     const [slides, setSlides] = useState(3)
@@ -33,19 +33,19 @@ const OffersDiscounts = () => {
     };
     return (
         <div className="alignCenter">
-            <div className="ajCenter bgBlue relative col-md-4 col-sm-3" style={{ height: '90vh' }}>
-                <h3 className="textCenter text_all_bold cWhite col-md-6 discText">Special offers & Discounts</h3>
+            <div className="relative col-md-4 col-sm-3" style={{ height: '50vh' }}>
+                <h3 className="textCenter text_all_bold cDBlue discText">Upcoming Tours</h3>
             </div>
             <div className="absolute col-md-9 col-sm-3 discDiv">
                 <div>
-                    <h3 className="textCenter text_all_bold cWhite col-sm-6 discTxt">Special offers & Discounts</h3>
+                    <h3 className="textCenter text_all_bold cDBlue discTxt">Upcoming Tours</h3>
                 </div>
                 <div>
                     <Slider {...settings}>
-                        <OffersCard />
-                        <OffersCard />
-                        <OffersCard />
-                        <OffersCard />
+                        <UpcomingToursCard />
+                        <UpcomingToursCard />
+                        <UpcomingToursCard />
+                        <UpcomingToursCard />
                     </Slider>
                 </div>
             </div>

@@ -5,20 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import ExploreCard from "../Cards/ExploreCard";
 
 const ExploreWorld = () => {
-    useEffect(() => {
-        window.addEventListener('resize', getDimension)
-    
-        return () => {
-        window.removeEventListener('resize', getDimension)
-    
-        }
-      })
-
-      const getDimension = () => {
-        console.log(window.innerWidth);
-        console.log(window.innerHeight);
-      }
-
     const settings = {
         dots: false,
         infinite: true,

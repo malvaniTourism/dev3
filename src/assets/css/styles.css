@@ -12,8 +12,14 @@
   display: flex;
   align-items: center;
 }
+.textCenter {
+  text-align: center;
+}
 .cWhite {
   color: #fff;
+}
+.cDBlue {
+  color: #071C55;
 }
 .bgBlue {
   background-color: #0000ff;
@@ -555,4 +561,42 @@
 .card_carousel {
   padding: 20px;
   margin: 20px;
+}
+
+.discDiv {
+  left: 24%;
+}
+.discTxt {
+  display: none;
+}
+
+.holidayPlan {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.respFlex {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  .discText {
+    display: none;
+  }
+  .discTxt {
+    display: block;
+  }
+  .respFlex {
+    flex-direction: column;
+  }
+  .discDiv {
+    width: 73vw;
+    left: 15vw;
+  }
+  .holidayPlan {
+    display: flex;
+    flex-direction: column;
+  }
 }

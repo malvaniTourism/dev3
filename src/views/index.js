@@ -10,7 +10,7 @@ import ExploreMoreCard from "../components/Cards/ExploreMoreCard";
 import ExploreDetailCard from "../components/Cards/ExploreDetailCard";
 import DefaultFooter from "../components/Footers/DefaultFooter";
 import DiscountCard from "../components/Cards/DiscountCard";
-import UpcomingToursCard from "../components/Cards/UpcomingToursCard";
+import UpcomingTours from "../components/Comps/UpcomingTours";
 import AboutUsCard from "../components/Cards/AboutUsCard";
 
 import OffersDiscounts from "../components/Comps/OffersDiscounts.js";
@@ -41,7 +41,7 @@ function Index() {
                     <ExploreMoreCard />
                     <ExploreDetailCard />
                     <DiscountCard />
-                    <UpcomingToursCard />
+                    <UpcomingTours />
                     {/* <AboutUsCard /> */}
                 </div>
 

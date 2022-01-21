@@ -5,11 +5,11 @@ import HolidayCard from "../Cards/HolidayCard";
 
 const HolidayPlan = () => {
     return (
-        <div>
+        <div className="ajCenter row">
             <div className="ajCenter">
                 <h3 className="text_all_bold">Perfect Holiday Plan</h3>
             </div>
-            <div className="ajCenter">
+            <div className="holidayPlan">
                 <HolidayCard />
                 <HolidayCard />
                 <HolidayCard />
